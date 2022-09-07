@@ -52,6 +52,9 @@ body {
 .item.name {
     grid-area: 4/2/5/4;
 }
+.shadow {
+    box-shadow: 0 6px 6px -6px gray;
+}
 
 h1 {
     margin: 0;
@@ -68,6 +71,7 @@ input {
     width: 50vw;
     height: 100%;
 }
+
 
 
 
