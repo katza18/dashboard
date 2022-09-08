@@ -1,7 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-html, body {
-
-}
 
 body {
     background-color: rgb(206, 206, 206);
@@ -15,9 +12,6 @@ body {
 
 .flex {
     display: flex;
-}
-
-.item {
 }
 
 .sidebar {
@@ -36,21 +30,42 @@ body {
     margin-left: 15vw;
 }
 
-.topbar .grid {
+.topbar .search {
     grid-template-columns: max-content 65vw max-content max-content;
-    grid-template-rows: max-content max-content max-content;
     margin: 2em 2em;
+    margin-bottom: 0;
     gap: 1em;
+}
+
+.topbar .greeting {
+    grid-template-columns: max-content;
+    grid-template-rows: max-content max-content;
+    gap: .5em;
+    padding-left: 2em;
+    padding-top: 2em;
+    width: 50%;
+}
+
+.topbar .button {
+    width: 50%;
+    padding: 2em 5em;
+    grid-template-columns: max-content max-content max-content;
+    gap: 1em;
+    justify-content: end;
 }
 
 .sidebar .grid {
     padding: 1em 1em;
 }
-.item.greeting {
-    grid-area: 3/2/4/4;
-}
-.item.name {
-    grid-area: 4/2/5/4;
+
+button {
+    background-color: rgb(74, 74, 74);
+    border: none;
+    border-radius: 32px;
+    color: white;
+    padding: 0.75em 1em;
+    font-size: 1rem;
+    width: 6em;
 }
 .shadow {
     box-shadow: 0 6px 6px -6px gray;
